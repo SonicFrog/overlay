@@ -21,5 +21,5 @@ DEPEND="${RDEPEND}
 KEYWORDS=""
 
 src_prepare() {
-	sed -i /PREFIX=\/usr/PREFIX=${D}/ src/purple/Makefile || die "Failed to fix Makefile"
+	sed -i s,PREFIX=/usr,PREFIX="${D}", src/purple/Makefile || die "Failed to fix Makefile"
 }
