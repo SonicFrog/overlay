@@ -1,9 +1,0 @@
-<?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
-<pkgmetadata>
-    <changelog>https://github.com/syncthing/syncthing/releases</changelog>
-    <maintainer>
-        <email>ogier@sonicfrog.ch</email>
-        <name>Ogier Bouvier</name>
-    </maintainer>
-</pkgmetadata>
