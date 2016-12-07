@@ -18,4 +18,4 @@ RDEPEND="net-im/pidgin"
 DEPEND="${RDEPEND}
 		dev-lang/fpc"
 
-KEYWORDS="~amd64"
+KEYWORDS=""
