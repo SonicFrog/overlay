@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+    <repo quality="experimental" status="unofficial">
+        <name>SonicFrog</name>
+        <description>Portage additions</description>
+        <homepage>https://github.com/SonicFrog/overlay</homepage>
+        <owner type="project">
+            <email>ars3nic@ars3nic.ch</email>
+            <name>ars3nic</name>
+        </owner>
+        <source type="git">https://github.com/SonicFrog/overlay.git</source>
+    </repo>
+</repositories>
