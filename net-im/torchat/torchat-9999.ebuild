@@ -19,3 +19,7 @@ DEPEND="${RDEPEND}
 		dev-lang/fpc"
 
 KEYWORDS=""
+
+src_prepare() {
+	sed -i /PREFIX=\/usr/PREFIX=${D}/ src/purple/Makefile || die "Failed to fix Makefile"
+}
