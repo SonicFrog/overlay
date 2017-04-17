@@ -18,5 +18,4 @@ RDEPEND="x11-libs/libxcb[xkb]
 		x11-libs/cairo[xcb]
 		x11-libs/libxkbcommon[X]"
 
-DEPEND="${RDEPEND}
-		virtual/pkg-config"
+DEPEND="${RDEPEND}"
