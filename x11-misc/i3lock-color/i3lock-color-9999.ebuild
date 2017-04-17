@@ -14,7 +14,6 @@ SRC_URI=""
 SLOT="0"
 
 RDEPEND="x11-libs/libxcb[xkb]
-		virtual/pam
 		x11-libs/xcb-util
 		x11-libs/cairo[xcb]
 		x11-libs/libxkbcommon[X]"
