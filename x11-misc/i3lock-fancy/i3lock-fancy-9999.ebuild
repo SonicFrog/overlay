@@ -30,6 +30,7 @@ src_configure() {
 
 src_install() {
 	mkdir -p "$INST_DIR"
+	mkdir -p "${D%/*}/usr/bin/"
 	cp lock "${D}/usr/bin/"
 	cp -r icons "${INST_DIR}"
 }
