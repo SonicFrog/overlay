@@ -36,7 +36,7 @@ DEPEND="${RDEPEND}"
 
 src_configure() {
 	local mycmakeargs=(
-		-DQTROOT=/usr/lib/qt5
+		-DQTROOT=/usr/share/qt5
 	)
 
 	elog Fetching dependencies...
