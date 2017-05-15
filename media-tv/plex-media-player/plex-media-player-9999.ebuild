@@ -24,6 +24,7 @@ CDEPEND='
 	dev-qt/qtwebengine:5/5.7
 	dev-qt/qtnetwork:5/5.7
 	dev-qt/qtxml:5/5.7
+	dev-qt/qtx11extras:5/5.7
 	dev-util/conan
 	dev-util/google-breakpad
 	>=media-video/mpv-0.25.0[libmpv]
