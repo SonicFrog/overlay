@@ -16,12 +16,21 @@ SLOT='0'
 KEYWORDS=''
 IUSE=''
 
-DEPEND=''
+DEPEND='
+	sys-libs/linux-syscall-support:=
+'
+RDEPEND=''
+
+# TODO remove bundled src/third_party
 
 src_unpack() {
-	local repo='https://chromium.googlesource.com/linux-syscall-support'
+	local lss="${S}/src/third_party/lss"
 
 	git-r3_src_unpack
-	git-r3_fetch "${repo}"
-	git-r3_checkout "${repo}" "${S}/src/third_party/lss"
+
+	mkdir "${lss}" || die "unable to create ${S}"
+	cp "${ROOT}/usr/include/linux_syscall_support.h" "${lss}" ||
+		die 'unable to copy linux_syscall_support.h'
+
+	default
 }
