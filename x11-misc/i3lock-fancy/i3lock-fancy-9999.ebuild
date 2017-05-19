@@ -25,7 +25,7 @@ INST_DIR="${D}/usr/share/i3lock-fancy"
 
 src_configure() {
 	# Fix script requiring icons to be in same dir
-	sed 's,$(realpath "$0"),"/usr/share/i3lock-fancy/",' lock > lock.sh
+	sed 's,$(readlink -f -- "$0"),"/usr/share/i3lock-fancy/",' lock > lock.sh
 }
 
 src_install() {
