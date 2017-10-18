@@ -13,13 +13,16 @@ LICENSE="BSD"
 
 SLOT="0"
 
+IUSE="libressl"
+
 DEPEND="dev-qt/qtcore:5/5.7
 		dev-qt/qtgui:5/5.7
 		dev-qt/qtquickcontrols:5/5.7
 		dev-qt/qtdeclarative:5/5.7
 		dev-qt/qtwebchannel:5/5.7[qml]
 		dev-libs/protobuf
-		dev-libs/libressl
+		!libressl? ( dev-libs/openssl:0= )
+		libressl? ( dev-libs/libressl:0= )
 		net-vpn/tor"
 RDEPEND="${DEPEND}"
 
