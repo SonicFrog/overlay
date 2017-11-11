@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit git-r3
+inherit git-r3 qmake-utils
 
 DESCRIPTION="An instant messaging service over Tor"
 HOMEPAGE="https://ricochet.im"
@@ -27,9 +27,13 @@ DEPEND="dev-qt/qtcore:5/5.7
 RDEPEND="${DEPEND}"
 
 src_configure() {
-	qmake -qt5 DEFINES+=RICOCHET_NO_PORTABLE
+	eqmake5 DEFINES+=RICOCHET_NO_PORTABLE DESTDIR="${D}"
 }
 
 src_compile() {
 	emake release
+}
+
+src_install() {
+	emake INSTALL_ROOT="${D}" install
 }
