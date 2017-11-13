@@ -26,8 +26,13 @@ DEPEND="dev-qt/qtcore:5/5.7
 		net-vpn/tor"
 RDEPEND="${DEPEND}"
 
+src_prepare() {
+	sed -i '/vtable-verify/d;/FORTIFY_SOURCE/d' hardened.pri
+}
+
 src_configure() {
 	eqmake5 DEFINES+=RICOCHET_NO_PORTABLE DESTDIR="${D}"
+
 }
 
 src_compile() {
