@@ -27,9 +27,8 @@ src_compile() {
 }
 
 src_install() {
-	emake INSTALL_UDEV_RULES=1 \
-		  UDEVDIR="$(get_udevdir)" \
-		  DESTDIR="${D}"
+	dobin brightnessctl
+	udev_dorules 90-brightnessctl.rules
 }
 
 pkg_postinst() {
