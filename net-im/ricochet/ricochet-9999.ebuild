@@ -27,6 +27,7 @@ DEPEND="dev-qt/qtcore:5/5.7
 RDEPEND="${DEPEND}"
 
 src_prepare() {
+	default
 	sed -i '/vtable-verify/d;/FORTIFY_SOURCE/d' hardened.pri
 }
 
