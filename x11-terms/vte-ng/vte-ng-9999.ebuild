@@ -36,6 +36,8 @@ DEPEND="${RDEPEND}
 	>=dev-util/intltool-0.35
 	sys-devel/gettext
 
+	dev-util/gtk-doc
+
 	!x11-libs/vte
 
 	vala? ( $(vala_depend) )
