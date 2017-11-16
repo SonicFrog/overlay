@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+    <maintainer type="person">
+        <email>ars3nic@ars3nic.ch</email>
+        <name>Ogier Bouvier</name>
+    </maintainer>
+    <use>
+        <flag name="glade">enable glade support</flag>
+        <flag name="introspection">build for gobject introspection</flag>
+        <flag name="crypt">???</flag>
+        <flag name="vala">support for the vala programming language</flag>
+    </use>
+</pkgmetadata>
