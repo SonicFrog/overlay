@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit git-r3
+inherit git-r3 eutils
 
 DESCRIPTION="A keyboard-centric VTE-based terminal"
 EGIT_REPO_URI="https://github.com/thestinger/termite"
@@ -25,11 +25,7 @@ src_prepare() {
 	sed -i /-s /d Makefile
 
 	if use nocsd; then
-		wget -O patch.tar.gz \
-			 https://aur.archlinux.org/cgit/aur.git/snapshot/termite-nocsd.tar.gz
-		tar vxf patch.tar.gz
-		# FIXME: for some reason epatch is not found...
-		patch < termite-nocsd/termite.patch
+		epatch "${FILESDIR}/${PN}-nocsd.patch"
 	fi
 }
 
