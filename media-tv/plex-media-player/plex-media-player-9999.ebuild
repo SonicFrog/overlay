@@ -18,13 +18,13 @@ KEYWORDS=''
 IUSE=''
 
 CDEPEND='
-	>=dev-qt/qtcore-5.7.1
-	dev-qt/qtgui-5.7.1
-	dev-qt/qtwebchannel-5.7.1[qml]
-	dev-qt/qtwebengine-5.7.1
-	dev-qt/qtnetwork-5.7.1
-	dev-qt/qtxml-5.7.1
-	dev-qt/qtx11extras-5.7.1
+	dev-qt/qtcore:5
+	dev-qt/qtgui:5
+	dev-qt/qtwebchannel:5[qml]
+	dev-qt/qtwebengine:5
+	dev-qt/qtnetwork:5
+	dev-qt/qtxml:5
+	dev-qt/qtx11extras:5
 	>=dev-util/conan-0.24.0
 	dev-util/google-breakpad
 	>=media-video/mpv-0.25.0[libmpv]
@@ -39,7 +39,7 @@ CDEPEND='
 
 RDEPEND="
 	${CDEPEND}
-	dev-qt/qtquickcontrols:5/5.7
+	dev-qt/qtquickcontrols:5
 "
 
 DEPEND="${CDEPEND}"
