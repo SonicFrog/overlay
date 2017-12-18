@@ -15,11 +15,11 @@ SLOT="0"
 
 IUSE="libressl"
 
-DEPEND="dev-qt/qtcore:5/5.7
-		dev-qt/qtgui:5/5.7
-		dev-qt/qtquickcontrols:5/5.7
-		dev-qt/qtdeclarative:5/5.7
-		dev-qt/qtwebchannel:5/5.7[qml]
+DEPEND="dev-qt/qtcore:5
+		dev-qt/qtgui:5
+		dev-qt/qtquickcontrols:5
+		dev-qt/qtdeclarative:5
+		dev-qt/qtwebchannel:5[qml]
 		dev-libs/protobuf
 		!libressl? ( dev-libs/openssl:0= )
 		libressl? ( dev-libs/libressl:0= )
@@ -33,7 +33,6 @@ src_prepare() {
 
 src_configure() {
 	eqmake5 DEFINES+=RICOCHET_NO_PORTABLE DESTDIR="${D}"
-
 }
 
 src_compile() {
@@ -42,4 +41,5 @@ src_compile() {
 
 src_install() {
 	emake INSTALL_ROOT="${D}" install
+	rm -f "${D}/ricochet"
 }
