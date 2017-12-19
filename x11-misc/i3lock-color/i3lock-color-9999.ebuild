@@ -3,7 +3,7 @@
 
 EAPI=6
 
-inherit git-r3
+inherit git-r3 autotools
 
 DESCRIPTION="An improved i3lock"
 HOMEPAGE="https://github.com/chrjguill/i3lock-color"
@@ -20,3 +20,8 @@ RDEPEND="x11-libs/libxcb[xkb]
 		!x11-misc/i3lock"
 
 DEPEND="${RDEPEND}"
+
+src_prepare() {
+	default
+	eautoreconf
+}
