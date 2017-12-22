@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>ars3nic@ars3nic.ch</email>
+	</maintainer>
+	<use>
+	    <flag name="test">enables test</flag>
+	    <flag name="debug">enables debuginfo and sanitizers</flag>
+	    <flag name="doc">install documentation (manpages are always installed)</flag>
+	</use>
+</pkgmetadata>
