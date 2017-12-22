@@ -52,6 +52,8 @@ REDEPEND="${CDEPEND}
 
 S="${WORKDIR}/i3-${PV}"
 
+KEYWORDS="~amd64 ~x86"
+
 src_prepare() {
 	default
 
