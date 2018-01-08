@@ -21,4 +21,5 @@ DEPEND="
 	sys-libs/ncurses:0
 	dev-python/six
 	dev-python/requests
+	dev-python/mailcap_fix
 	"
