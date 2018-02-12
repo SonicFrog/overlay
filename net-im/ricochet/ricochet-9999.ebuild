@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -15,7 +15,7 @@ SLOT="0"
 
 IUSE="libressl"
 
-DEPEND="dev-qt/qtcore:5
+CDEPEND="dev-qt/qtcore:5
 		dev-qt/qtgui:5
 		dev-qt/qtquickcontrols:5
 		dev-qt/qtdeclarative:5
@@ -24,7 +24,12 @@ DEPEND="dev-qt/qtcore:5
 		!libressl? ( dev-libs/openssl:0= )
 		libressl? ( dev-libs/libressl:0= )
 		net-vpn/tor"
-RDEPEND="${DEPEND}"
+
+DEPEND="
+	${CDEPEND}
+	dev-qt/linguist-tools"
+
+RDEPEND="${CDEPEND}"
 
 src_prepare() {
 	default
