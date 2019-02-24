@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -16,7 +16,7 @@ SLOT="0"
 IUSE="doc"
 
 RDEPEND=">=dev-python/pyudev-0.13[${PYTHON_USEDEP}]
-	dev-python/pygojbect:3[${PYTHON_USEDEP}]
+	dev-python/pygobject:3[${PYTHON_USEDEP}]
 	x11-libs/gtk+:3[introspection]"
 
 CONFIG_CHECK="~HID_LOGITECH_DJ ~HIDRAW"
