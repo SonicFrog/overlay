@@ -12,6 +12,7 @@ HOMEPAGE=""
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 EGIT_REPO_URI="https://github.com/dylanaraps/pywal"
+LICENSE="MIT"
 
 CDEPEND="
 	media-gfx/imagemagick
