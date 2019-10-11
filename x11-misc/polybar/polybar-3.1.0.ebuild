@@ -1,4 +1,4 @@
-# Copyright 1999-2018 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -47,6 +47,10 @@ CDEPEND="
 	x11-libs/xcb-util-xrm
 	x11-proto/xcb-proto
 "
+
+DEPEND="${CDEPEND}"
+
+RDEPEND="${CDEPEND}"
 
 use_on() {
 	if use $1 ; then
