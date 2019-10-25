@@ -20,6 +20,7 @@ chan-0.1.21
 chrono-0.4.2
 chrono-tz-0.4.1
 clap-2.31.2
+crossbeam-channel-0.3
 cpuprofiler-0.0.3
 dbghelp-sys-0.2.0
 dbus-0.6.1
@@ -51,7 +52,7 @@ log-0.4.1
 maildir-0.1.1
 mailparse-0.5.1
 memchr-2.0.1
-nix-0.11.0
+nix-0.14.0
 num-0.1.42
 num-bigint-0.1.43
 num-complex-0.1.43
@@ -113,5 +114,8 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=""
-RDEPEND=""
+CDEPEND="
+        sys-apps/dbus
+"
+DEPEND="${CDEPEND}"
+RDEPEND="${CDEPEND}"
