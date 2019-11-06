@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+    <maintainer type="person">
+        <email>ogier@bouvier.family</email>
+        <name>Ogier Bouvier</name>
+    </maintainer>
+    <longdescription>
+        rofi frontend for pass
+    </longdescription>
+    <use>
+        <flag name="X">
+            Use <pkg>x11-misc/xdotool</pkg> to autotype passwords.
+        </flag>
+        <flag name="otp">
+            Add support for pass-otp
+        </flag>
+    </use>
+</pkgmetadata>
