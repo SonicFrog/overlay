@@ -23,11 +23,13 @@ CDEPEND="
 	dev-python/typing
 	dev-python/jsonschema
 	dev-python/pycryptodome
+	dev-python/unpaddedbase64
 
 	e2e? (
 		 dev-python/peewee
 		 dev-python/cachetools
 		 dev-python/atomicwrites
+		 dev-python/olm
 	)
 "
 
