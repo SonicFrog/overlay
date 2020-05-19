@@ -26,6 +26,8 @@ CDEPEND="
 	dev-qt/qtimageformats:${QT_VER}
 	dev-qt/qtquickcontrols2:${QT_VER}
 	dev-python/pip
+	dev-python/aiofiles
+	dev-python/uvloop
 	dev-python/pyotherside
 
 	media-libs/openjpeg:2
