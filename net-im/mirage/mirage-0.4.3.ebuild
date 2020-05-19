@@ -43,7 +43,6 @@ DEPEND="${CDEPEND}
 
 RDEPEND="${CDEPEND}"
 
-src_prepare() {
-	eapply_user
-	eqmake5
+src_configure() {
+	eqmake5 PREFIX="${D}"
 }
