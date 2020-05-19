@@ -24,6 +24,7 @@ CDEPEND="
 	dev-python/jsonschema
 	dev-python/pycryptodome
 	dev-python/unpaddedbase64
+	dev-python/future
 
 	e2e? (
 		 dev-python/peewee
