@@ -3,7 +3,7 @@
 
 EAPI=7
 
-inherit cmake-utils git-r3
+inherit cmake-utils
 
 DESCRIPTION="Implementation of the olm and megolm cryptographic ratchets"
 HOMEPAGE="https://gitlab.matrix.org/matrix-org/olm"
