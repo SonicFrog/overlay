@@ -25,6 +25,14 @@ CDEPEND="
 	dev-python/pycryptodome
 	dev-python/unpaddedbase64
 	dev-python/future
+	dev-python/hyper-h2
+	dev-python/h11
+	dev-python/aiohttp
+	dev-python/appdirs
+	dev-python/pymediainfo
+	dev-python/mistune
+
+	media-libs/cairosvg
 
 	e2e? (
 		 dev-python/peewee
