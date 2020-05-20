@@ -15,3 +15,10 @@ SLOT="0"
 LICENSE="Apache-2.0"
 
 S="${S}/python"
+
+CDEPEND="
+	>=dev-libs/olm-${PV}
+"
+
+DEPEND="${CDEPEND}"
+RDEPEND="${CDEPEND}"
