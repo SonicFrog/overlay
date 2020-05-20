@@ -28,6 +28,7 @@ CDEPEND="
 	dev-python/pip
 	dev-python/aiofiles
 	dev-python/uvloop
+	dev-python/filetype
 	dev-python/pyotherside
 
 	media-libs/openjpeg:2
