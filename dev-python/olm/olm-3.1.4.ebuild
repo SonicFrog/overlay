@@ -22,3 +22,9 @@ CDEPEND="
 
 DEPEND="${CDEPEND}"
 RDEPEND="${CDEPEND}"
+
+pkg_postinst() {
+	default
+	# README is already installed by dev-libs/olm
+	rm "${D}/usr/share/doc/olm-3.1.3/README.md.bz2"
+}
