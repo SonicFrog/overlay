@@ -18,27 +18,27 @@ IUSE="e2e"
 SRC_URI="https://github.com/poljar/matrix-nio/archive/${PV}.tar.gz -> ${P}.tar.gz"
 
 CDEPEND="
-	dev-python/logbook
-	dev-python/aiofiles
-	dev-python/typing
-	dev-python/jsonschema
-	dev-python/pycryptodome
-	dev-python/unpaddedbase64
-	dev-python/future
-	dev-python/hyper-h2
-	dev-python/h11
-	dev-python/aiohttp
-	dev-python/appdirs
-	dev-python/pymediainfo
-	dev-python/mistune
+	dev-python/logbook[${PYTHON_USEDEP}]
+	dev-python/aiofiles[${PYTHON_USEDEP}]
+	dev-python/typing[${PYTHON_USEDEP}]
+	dev-python/jsonschema[${PYTHON_USEDEP}]
+	dev-python/pycryptodome[${PYTHON_USEDEP}]
+	dev-python/unpaddedbase64[${PYTHON_USEDEP}]
+	dev-python/future[${PYTHON_USEDEP}]
+	dev-python/hyper-h2[${PYTHON_USEDEP}]
+	dev-python/h11[${PYTHON_USEDEP}]
+	dev-python/aiohttp[${PYTHON_USEDEP}]
+	dev-python/appdirs[${PYTHON_USEDEP}]
+	dev-python/pymediainfo[${PYTHON_USEDEP}]
+	dev-python/mistune[${PYTHON_USEDEP}]
 
 	media-libs/cairosvg
 
 	e2e? (
-		 dev-python/peewee
-		 dev-python/cachetools
-		 dev-python/atomicwrites
-		 dev-python/olm
+		 dev-python/peewee[${PYTHON_USEDEP}]
+		 dev-python/cachetools[${PYTHON_USEDEP}]
+		 dev-python/atomicwrites[${PYTHON_USEDEP}]
+		 dev-python/olm[${PYTHON_USEDEP}]
 	)
 "
 
