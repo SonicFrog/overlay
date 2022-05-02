@@ -20,7 +20,7 @@ CDEPEND="
 	dev-python/jinja[${PYTHON_USEDEP}]
 	dev-python/keyring[${PYTHON_USEDEP}]
 	dev-python/proton-client[${PYTHON_USEDEP}]
-	dev-python/pydxg[${PYTHON_USEDEP}]
+	dev-python/pyxdg[${PYTHON_USEDEP}]
 	gnome-base/gnome-keyring
 	net-misc/networkmanager
 	net-vpn/networkmanager-openvpn[gtk]
