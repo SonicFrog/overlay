@@ -14,7 +14,7 @@ SLOT="0"
 LICENSE="GPL-3"
 KEYWORDS="~amd64 ~x86"
 
-S="${S}/../proton-python-client-${PV}"
+S="${WORKDIR}/proton-python-client-${PV}"
 
 CDEPEND="
 	>=dev-python/requests-2.16.0[${PYTHON_USEDEP}]
@@ -22,5 +22,6 @@ CDEPEND="
 	dev-python/python-gnupg[${PYTHON_USEDEP}]
 	dev-python/pyopenssl[${PYTHON_USEDEP}]
 "
+
 DEPEND="${CDEPEND}"
 RDEPEND="${CDEPEND}"
