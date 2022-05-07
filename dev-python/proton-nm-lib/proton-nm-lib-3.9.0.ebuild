@@ -14,6 +14,8 @@ LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
+S="${WORKDIR}/protonvpn-nm-lib-${PV}"
+
 CDEPEND="
 	app-crypt/libsecret
 	dev-python/distro[${PYTHON_USEDEP}]
