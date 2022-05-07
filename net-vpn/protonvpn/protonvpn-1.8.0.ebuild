@@ -14,6 +14,8 @@ SRC_URI="https://github.com/ProtonVPN/linux-app/archive/refs/tags/${PV}.tar.gz -
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
+S="${WORKDIR}/linux-app-${PV}"
+
 CDEPEND="
 	dev-libs/libappindicator
 	dev-python/pygobject[${PYTHON_USEDEP},cairo]
