@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtds/metadata.dtd">
+<pkgmetadata>
+    <upstream>
+        <remote-id type="github">yannh/kubeconform</remote-id>
+    </upstream>
+</pkgmetadata>
